@@ -1,0 +1,21 @@
+.play {
+  background-image: url(../images/play.png);
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.pause {
+  background-image: url(../images/pause.png);
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+button.tile {
+  width: 200px;
+}

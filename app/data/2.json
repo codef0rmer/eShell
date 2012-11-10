@@ -1,0 +1,17 @@
+{
+   "textwith_blanks":"AngularJS is originally created in [[1]] by [[2]] and [[3]].",
+   "choices":[
+      {
+         "val1":"[[1]]",
+         "val2":"2009,09"
+      },
+      {
+         "val1":"[[2]]",
+         "val2":"misko,Misko Hevery"
+      },
+      {
+         "val1":"[[3]]",
+         "val2":"adam,adam abrons"
+      }
+   ]
+}

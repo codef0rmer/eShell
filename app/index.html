@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>eShell - A player for eLearning Courses </title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="styles/main.css"/>    
+    <link rel="stylesheet" href="styles/1.css"/>    
+    <link rel="stylesheet" href="styles/2.css"/>    
+    <link rel="stylesheet" href="styles/3.css"/>    
+    <link rel="stylesheet" href="styles/4.css"/>    
+  </head>
+  <body ng-app="ePlayer">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">eShell - A player for eLearning Courses</a>
+        </div>
+      </div>
+    </div>
+    <div id="container" style="margin-top:40px">
+      <div ng-view></div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-bottom ng-cloak">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="btn-group pull-left">
+            <input class="btn btn-inverse input-small" value="Attempt {{attempt}} of {{totalAttempts}}" disabled/>            
+          </div>
+
+          <div class="btn-group pull-left">
+            <button class="btn btn-primary" type="button" ng-disabled="disableSubmit" ng-show="showSubmit && attempt <= totalAttempts" ng-click="submit()">Submit</button>            
+          </div>
+          <div class="btn-group pull-left">
+            <button class="btn btn-warning" type="button" ng-show="!showSubmit && attempt < totalAttempts" ng-click="tryAgain()">Try Again</button>          
+          </div>
+          <div class="btn-group pull-left">
+            <button class="btn btn-info" type="button" ng-show="!showSubmit && attempt >= totalAttempts" ng-click="showAns()">Show Answer</button>
+          </div>
+          <div class="btn-group pull-right">
+            <button class="btn" ng-click="prevTemplate(currentTemplate)" ng-disabled="isFirst(currentTemplate)">&laquo;</button>
+            <button class="btn">{{currentTemplate}} of {{totalTemplates}}</button>
+            <button class="btn" ng-click="nextTemplate(currentTemplate)" ng-disabled="isLast(currentTemplate)">&raquo;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/vendor/jquery.min.js"></script>
+    <script src="scripts/vendor/jquery-ui.min.js"></script>
+    <script src="scripts/vendor/underscore-min.js"></script>
+    <script src="scripts/vendor/angular.min.js"></script>
+    <script src="scripts/vendor/angular-resource.min.js"></script>
+    <script src="scripts/vendor/jplayer/jquery.jplayer.min.js"></script>
+    <script src="scripts/vendor/jplayer/jquery.jplayer.inspector.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/directives.js"></script>
+  </body>
+</html>

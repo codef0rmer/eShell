@@ -1,0 +1,25 @@
+{
+    "image": "1.png",
+    "choices": [
+        {
+            "val1": false,
+            "val2": "Angular.js",
+            "val3": "http://s0.vocaroo.com/media/download_temp/Vocaroo_s0PPjt87YRjJ.mp3"
+        },
+        {
+            "val1": false,
+            "val2": "Backbone.js",
+            "val3": "http://s1.vocaroo.com/media/download_temp/Vocaroo_s1M4Uvki8bCP.mp3"
+        },
+        {
+            "val1": true,
+            "val2": "Ember.js",
+            "val3": "http://s1.vocaroo.com/media/download_temp/Vocaroo_s1L71c3zIxjW.mp3"
+        },
+        {
+            "val1": true,
+            "val2": "Knockout.js",
+            "val3": "http://s0.vocaroo.com/media/download_temp/Vocaroo_s0JCPo9gLOhG.mp3"
+        }
+    ]
+}

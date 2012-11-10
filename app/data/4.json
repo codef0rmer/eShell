@@ -1,0 +1,25 @@
+{
+    "image": "1.png",
+    "choices": [
+        {
+            "val1": true,
+            "val2": "Angular.js",
+            "val3": "angular.mp3"
+        },
+        {
+            "val1": false,
+            "val2": "Backbone.js",
+            "val3": "backbone.mp3"
+        },
+        {
+            "val1": true,
+            "val2": "Ember.js",
+            "val3": "ember.mp3"
+        },
+        {
+            "val1": false,
+            "val2": "Knockout.js",
+            "val3": "knockout.mp3"
+        }
+    ]
+}

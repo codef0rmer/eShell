@@ -1,0 +1,33 @@
+<script type="text/javascript" src="scripts/tpl/1.js"></script>
+<div ng-controller="oneCtrl">
+  <div class='contentWrapper ng-cloak'>
+    <div class='content'>
+      <div class="row-fluid">
+        <h3 class='pagination-centered'>Drag and Drop</h3>
+        <ul class="thumbnails">
+          <li class="span3" style='margin-left:10px;' ng-repeat="item in list2">
+            <div class="thumbnail">
+              <div class="caption">
+                <div class='emage'><img ng-src="images/{{choices[$index].val1}}"/></div>
+                <p><div class="btn" data-index="{{$index}}" data-list="list2" data-drop="item.drag" droppable>
+                  <div class="btn" data-index="{{$index}}" data-list="list2" ng-show="item.title" ng-class="{true:'btn-success',false:'btn-danger',null: 'btn-info'}[item.valid]" data-drag="item.drag" draggable>{{item.title}}</div>
+                </div></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="optionsWrapper" class="navbar">
+    <div class="navbar-inner">
+      <div class="container form-inline" style="text-align: center;">
+        <button class="btn btn-inverse" style='margin-right:15px;' ng-disabled="currentPage == 0" ng-click="prev()">&laquo;</button>
+        <div class="btn-group" ng-repeat="item in list1" ng-show="show($index)" data-index="{{$index}}" data-list="list1" data-drop="{{item.drag}}" droppable-dnd>
+          <div class="btn btn-info" data-index="{{$index}}" data-list="list1" ng-class="item.title.length || 'hidden'" data-drag="item.drag" draggable>{{item.title}}</div>
+        </div>
+        <button class="btn btn-inverse" style='margin-left:15px;' ng-disabled="currentPage == numPages" ng-click="next()">&raquo;</button>
+      </div>
+    </div>
+  </div>
+</div>

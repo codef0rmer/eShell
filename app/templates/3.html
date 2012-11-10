@@ -1,0 +1,28 @@
+<script type="text/javascript" src="scripts/tpl/3.js"></script>
+<div ng-controller="threeCtrl">
+  <div class='contentWrapper ng-cloak'>
+    <div class='content'>
+      <h3 class='pagination-centered'>Ordering Image</h3>        
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          <li class="span3" style='margin-left:10px;' ng-repeat="choice in choices">
+            <div class="thumbnail">
+              <div class="caption">
+                <b><center>{{choice.val1}}</center></b>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="thumbnails">
+          <li class="span3" data-index="{{$index}}" ng-repeat="item in options" data-list="list1" data-drop="item.drag" ng-class="{true:'label-success',false:'label-important'}[item.valid]" data-drag="item.drag" data-axis="x" draggable droppable>
+            <div class="thumbnail">
+              <div class="caption">
+                <div class='emage'><img ng-src="images/{{item.src}}"/></div>                
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

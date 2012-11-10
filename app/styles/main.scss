@@ -1,0 +1,20 @@
+@import "compass_twitter_bootstrap";
+
+body {
+  overflow: hidden;
+}
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  background: #EEE;
+  width: 1024px;
+}
+.navbar {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ng-cloak {
+  display: none;
+}

@@ -1,0 +1,27 @@
+<script type="text/javascript" src="scripts/tpl/4.js"></script>
+<div ng-controller="fourCtrl">
+  <div class='contentWrapper ng-cloak'>
+    <div class='content'>
+      <h3 class='pagination-centered'>Multiple Choice Question</h3>        
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          <li class="span3">
+            <div class="thumbnail">
+              <div class="caption">
+                <div class='emage'><img ng-src="images/{{image}}"/></div>                
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="control-group" data-correct="{{item.correct}}" ng-repeat="item in options">
+              <div class="controls">
+                <div class="speaker play" data-audio="item.audio" data-autoplay="false" data-pauseothers="true" jplayer></div>
+                <button class="btn btn-large tile" style='margin-top: 20px;' ng-click="clickTile(item, $index)" ng-class="selectTile(item)">{{item.title}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

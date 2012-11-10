@@ -1,0 +1,32 @@
+{
+    "choices": [
+        {
+            "val1": "1.png",
+            "val2": "Angular.js"
+        },
+        {
+            "val1": "2.png",
+            "val2": "Backbone.js"
+        },
+        {
+            "val1": "3.png",
+            "val2": "Ember.js"
+        },
+        {
+            "val1": "4.png",
+            "val2": "Knockout.js"
+        },
+        {
+            "val1": "5.png",
+            "val2": "Spine.js"
+        },
+        {
+            "val1": "6.png",
+            "val2": "JavascriptMVC"
+        },
+        {
+            "val1": "7.png",
+            "val2": "Batman.js"
+        }
+    ]
+}
