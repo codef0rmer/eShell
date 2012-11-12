@@ -1,7 +1,17 @@
 {
-  "author": "",
-  "name": "",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {}
+  "author": "Amit Gharat a.k.a codef0rmer",
+  "name": "eShell",
+  "version": "0.0.3",
+  "homepage": "https://github.com/codef0rmer/eShell",
+  "dependencies": {
+    "yeoman":  ">= 0.9.0"
+  },
+  "devDependencies": {
+    "AngularJS": ">= 1.0.1",
+    "Twitter Bootstrap": ">= 2.1.0",
+    "Underscore.js": ">= 1.4.2",
+    "jQuery": ">= 1.8.0",
+    "jQuery UI": ">= 1.8.23",
+    "jPlayer": ">= 2.2.0"
+  }
 }
