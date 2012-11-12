@@ -1,7 +1,7 @@
 {
   "author": "Amit Gharat a.k.a codef0rmer",
   "name": "eShell",
-  "version": "0.0.3",
+  "version": "0.2",
   "homepage": "https://github.com/codef0rmer/eShell",
   "dependencies": {
     "yeoman":  ">= 0.9.0"

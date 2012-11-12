@@ -16,3 +16,6 @@ Because I wanted to try out AngularJS.
 You need to have [yeoman](http://yeoman.io/) installed to run it. Finally just run: 
 
  $ yeoman server
+
+#Demo?
+![demo](https://raw.github.com/codef0rmer/eShell/master/app/images/demo.png)
