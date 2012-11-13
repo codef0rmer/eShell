@@ -1,5 +1,13 @@
 #eShell 
 A player for eLearning Courses created to learn AngularJS.
+I've covered: 
+
+  * jQueryUi Drag & Drop
+  * Form Validation in AngularJS
+  * Ordering/Sorting images
+  * jPlayer integration to play audios
+
+![demo](https://raw.github.com/codef0rmer/eShell/master/app/images/demo.png)
 
 #Why?
 Because I wanted to try out AngularJS.
@@ -16,6 +24,3 @@ Because I wanted to try out AngularJS.
 You need to have [yeoman](http://yeoman.io/) installed to run it. Finally just run: 
 
  $ yeoman server
-
-#Demo?
-![demo](https://raw.github.com/codef0rmer/eShell/master/app/images/demo.png)
