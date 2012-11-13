@@ -23,7 +23,7 @@
     <div class="navbar-inner">
       <div class="container form-inline" style="text-align: center;">
         <button class="btn btn-inverse" style='margin-right:15px;' ng-disabled="currentPage == 0" ng-click="prev()">&laquo;</button>
-        <div class="btn-group" ng-repeat="item in list1" ng-show="show($index)" data-index="{{$index}}" data-list="list1" data-drop="{{item.drag}}" droppable-dnd>
+        <div class="btn-group" ng-repeat="item in list1" ng-show="show($index)" data-index="{{$index}}" data-list="list1" data-drop="{{item.drag}}" droppable>
           <div class="btn btn-info" data-index="{{$index}}" data-list="list1" ng-class="item.title.length || 'hidden'" data-drag="item.drag" draggable>{{item.title}}</div>
         </div>
         <button class="btn btn-inverse" style='margin-left:15px;' ng-disabled="currentPage == numPages" ng-click="next()">&raquo;</button>

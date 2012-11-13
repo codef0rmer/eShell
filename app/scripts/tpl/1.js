@@ -34,20 +34,22 @@ function oneCtrl($scope, $rootScope, Template, $timeout) {
    * @return void
    */
   $scope.onDrop = function(dragList, dragIndex, dropList, dropIndex) {
+    var temp;
+
     if (dragList === 'list1' && dropList === 'list2') {
-      var temp = $scope.list2[dropIndex];
+      temp = $scope.list2[dropIndex];
       $scope.list2[dropIndex] = $scope.list1[dragIndex];
       $scope.list1[dragIndex] = temp;
     } else if (dragList === 'list2' && dropList === 'list2') {
-      var temp = $scope.list2[dropIndex];
+      temp = $scope.list2[dropIndex];
       $scope.list2[dropIndex] = $scope.list2[dragIndex];
       $scope.list2[dragIndex] = temp;
     } else if (dragList === 'list2' && dropList === 'list1') {
-      var temp = $scope.list1[dropIndex];
+      temp = $scope.list1[dropIndex];
       $scope.list1[dropIndex] = $scope.list2[dragIndex];
       $scope.list2[dragIndex] = temp;
     } else if (dragList === 'list1' && dropList === 'list1') {
-      var temp = $scope.list1[dropIndex];
+      temp = $scope.list1[dropIndex];
       $scope.list1[dropIndex] = $scope.list1[dragIndex];
       $scope.list1[dragIndex] = temp;
     }
