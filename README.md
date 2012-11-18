@@ -7,6 +7,7 @@ I've covered:
   * Ordering/Sorting images
   * jPlayer integration to play audios
 
+[Working Demo](http://amitgharat.000space.com/eShell/index.html)
 ![demo](https://raw.github.com/codef0rmer/eShell/master/app/images/demo.png)
 
 #Why?
