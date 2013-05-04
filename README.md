@@ -18,10 +18,10 @@ Because I wanted to write Testable Application in AngularJS.
 #Try?
 You need to have [prerequisite components](http://wp.me/paveF-h6) installed to run it. Finally just run:
 
- $ cd eShell
- $ sudo npm install
- $ sudo bower install
- $ grunt server
+* $ cd eShell
+* $ sudo npm install
+* $ sudo bower install
+* $ grunt server
 
 #Todo?
 Include more templates
