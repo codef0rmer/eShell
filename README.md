@@ -1,27 +1,27 @@
-#eShell 
-A player for eLearning Courses created to learn AngularJS.
-I've covered: 
-
-  * jQueryUi Drag & Drop
-  * Form Validation in AngularJS
-  * Ordering/Sorting images
-  * jPlayer integration to play audios
-
-[Working Demo](http://amitgharat.000space.com/eShell/index.html)
-![demo](https://raw.github.com/codef0rmer/eShell/master/app/images/demo.png)
+#eShell
+ An eLearning player – a building block for more conventional eLearning courses to be run on created with authoring tools. Such players basically consist of different kinds of templates/activities backed by XML/JSON data (produced by Authoring Tools).
 
 #Why?
-Because I wanted to try out AngularJS.
+Because I wanted to write Testable Application in AngularJS.
 
 #What?
 * [AngularJS](http://angularjs.org/)
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
-* [Underscore.js](http://underscorejs.org/)
-* [jQuery](http://jquery.com/)
-* [jQuery UI](http://jqueryui.com/)
-* [jPlayer](http://jplayer.org/)
 
-#How?
-You need to have [yeoman](http://yeoman.io/) installed to run it. Finally just run: 
+#How I build it?
+ * http://wp.me/paveF-h6
+ * http://wp.me/paveF-hm
+ * http://wp.me/paveF-hG
+ * http://wp.me/paveF-hL
+ * http://wp.me/paveF-hV
 
- $ yeoman server
+#Try?
+You need to have [prerequisite components](http://wp.me/paveF-h6) installed to run it. Finally just run:
+
+ $ cd eShell
+ $ sudo npm install
+ $ sudo bower install
+ $ grunt server
+
+#Todo?
+Include more templates

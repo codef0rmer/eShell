@@ -15,50 +15,50 @@
   position: relative;
 }
 
-.carousel {
+.carousel-inner {
 
-  .item {
+  > .item {
     display: none;
     position: relative;
-    @include transition(.6s ease-in-out left);
+    @include ctb-transition(.6s ease-in-out left);
   }
 
   // Account for jankitude on images
-  .item > img {
+  > .item > img {
     display: block;
     line-height: 1;
   }
 
-  .active,
-  .next,
-  .prev { display: block; }
+  > .active,
+  > .next,
+  > .prev { display: block; }
 
-  .active {
+  > .active {
     left: 0;
   }
 
-  .next,
-  .prev {
+  > .next,
+  > .prev {
     position: absolute;
     top: 0;
     width: 100%;
   }
 
-  .next {
+  > .next {
     left: 100%;
   }
-  .prev {
+  > .prev {
     left: -100%;
   }
-  .next.left,
-  .prev.right {
+  > .next.left,
+  > .prev.right {
     left: 0;
   }
 
-  .active.left {
+  > .active.left {
     left: -100%;
   }
-  .active.right {
+  > .active.right {
     left: 100%;
   }
 
@@ -81,15 +81,15 @@
   text-align: center;
   background: $grayDarker;
   border: 3px solid $white;
-  @include border-radius(23px);
-  @include opacity(50);
+  @include ctb-border-radius(23px);
+  @include ctb-opacity(50);
 
   // we can't have this transition here
   // because webkit cancels the carousel
   // animation if you trip this while
   // in the middle of another animation
   // ;_;
-  // .transition(opacity .2s linear);
+  // @include ctb-transition(opacity .2s linear);
 
   // Reposition the right one
   &.right {
@@ -101,7 +101,7 @@
   &:hover {
     color: $white;
     text-decoration: none;
-    @include opacity(90);
+    @include ctb-opacity(90);
   }
 }
 
