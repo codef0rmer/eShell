@@ -3,10 +3,9 @@
 describe('Controller: FibCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('eShellApp'), ['eywa']);
-  // beforeEach(angular.module('eywa'));
+  beforeEach(module('eShellApp'));
 
-  var FibCtrl, scope, eywa, checker, $httpBackend;
+  var FibCtrl, scope, checker, $httpBackend;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, _$httpBackend_, _checker_) {
@@ -18,7 +17,6 @@ describe('Controller: FibCtrl', function () {
     FibCtrl = $controller('FibCtrl', {
       $scope: scope
     });
-    $httpBackend.flush();
 
     scope.data = {
       text    : 'AngularJS is originally created in [[1]] by [[2]]',
@@ -31,11 +29,6 @@ describe('Controller: FibCtrl', function () {
       }]
     };
   }));
-
-  afterEach(function() {
-    $httpBackend.verifyNoOutstandingExpectation();
-    $httpBackend.verifyNoOutstandingRequest();
-  });
 
   it('should set class', function() {
     expect(scope.setClass(true)).toBe('success');
