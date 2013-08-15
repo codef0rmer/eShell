@@ -1,6 +1,6 @@
 describe('text box scenario', function () {
   beforeEach(function () {
-    browser().navigateTo('http://localhost:9000');
+    browser().navigateTo('/');
   });
   it('should disable submit/tryagain/showans buttons on page/template load', function () {
     expect(element('button:contains("Submit")').attr('disabled')).toBe('disabled');
@@ -9,7 +9,7 @@ describe('text box scenario', function () {
   });
 
   it('should set attempt 1 of N', function () {
-    expect(element('div[ng-controller="FooterCtrl"] div.pull-left:first > input').val()).toContain('Attempt 1 of');
+    expect(element('div[ng-controller="FooterCtrl"] div.pull-left:first > button:eq(0)').html()).toContain('Attempt 1 of');
   });
 
   it('should set template 1 of N', function () {
